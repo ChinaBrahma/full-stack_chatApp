@@ -37,6 +37,7 @@ chinab ~/Developer/devOps/full-stack_chatApp/k8s % cat /etc/hosts
 # Using ingress
 1. minikube addons enable ingress
 2. sudo -E kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80
+! -> Ingress-nginx unable to serve, 404 error
 
 
 

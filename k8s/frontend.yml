@@ -13,12 +13,12 @@ spec:
       name: frontend-pod
       labels:
         app: frontend
-    spec:                           # ✅ Correct placement of spec
+    spec:                           
       containers:
         - name: chatapp-frontend
           image: chinabrahma/chatapp-frontend:latest
           ports:
-            - containerPort: 80    # ✅ Corrected typo (was containerPorts)
+            - containerPort: 80 
           # env:
           #   - name: NODE_ENV
           #     value: production

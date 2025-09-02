@@ -9,6 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  ingressClassName: nginx
   rules:
   - host: chat-app.com
     http:
@@ -27,3 +28,4 @@ spec:
             name: backend
             port: 
               number: 5001
+
