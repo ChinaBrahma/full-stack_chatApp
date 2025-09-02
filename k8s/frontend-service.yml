@@ -8,7 +8,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30080
-  type: NodePort
+      port: 80          # Service port
+      targetPort: 80    # Pod container port
+  type: ClusterIP       # Internal cluster access
